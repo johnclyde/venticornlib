@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-18",
+  "prover_revision": "05db3d411fda1a983726a62f01d2a2b65c269c1c",
+  "source_sha256": {
+    "nat.ac": "adf1743744e811b1a5e3f6fe51c209c6a520b0eb217fa8591d07d6206064c177",
+    "pair.ac": "10dcf70eea085f16de0cb6920b406deb7a694a8bd278b13b313bbdedffacc272",
+    "nat_gcd.ac": "9eb23d3db914abfcfcfdeb1b69b2ed252df6898294b0094afabc68f132a32c11"
+  },
+  "platform": "Darwin arm64",
+  "rustc": "rustc 1.86.0 (05f9846f8 2025-03-31) (Homebrew)",
+  "runs": {
+    "onnx": {
+      "log": "2026-10-18-onnx.log",
+      "log_sha256": "256bb314d63da86f2098ca5511ef229b69d5e0b992d3f754f20bca13463e5447",
+      "binary_sha256": "db8ac12714165130d52685afb7d578e10d5542b52e69c8362da729bb292ad88d",
+      "verified": 895,
+      "total": 895,
+      "full_searches": 895,
+      "filtered_searches": 0,
+      "exit_code": 0
+    },
+    "heuristic": {
+      "log": "2026-10-18-heuristic.log",
+      "log_sha256": "a6b7c658a6a11096ec21612de439dfb75bf52996a30b0820b93fe9c5388c96c9",
+      "binary_sha256": "161c5d9eecb9141cfdf1c2d16a10ea5650a4644fab6c5e1418c026a0d3e80fa8",
+      "verified": 895,
+      "total": 895,
+      "full_searches": 895,
+      "filtered_searches": 0,
+      "exit_code": 0
+    }
+  }
+}

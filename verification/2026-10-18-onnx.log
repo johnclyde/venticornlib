@@ -1,0 +1,14 @@
+verifying modules: nat, nat_gcd, pair
+nat, line 1322: a.exp(b + x.suc) = a.exp(b) * a.exp(x.suc) took 0.659s
+nat_gcd, line 449: divides(gcd(a, b) * gcd(af, bf), a) took 0.271s
+
+Build completed successfully.
+895/895 OK
+100.00% success rate
+895 searches performed
+895 full searches, 0 filtered searches
+0 filtered searches fell back to full search
+61.74 average activations
+10633.9 mean square activations
+625.53 average clauses
+2.6 ms average proving time
