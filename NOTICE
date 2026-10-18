@@ -1,0 +1,7 @@
+Venticornlib includes mathematical library sources from Acornlib, part of the
+Acorn project (https://github.com/acornprover/acornlib), distributed under the
+Apache License, Version 2.0. Existing source comments and attribution are retained.
+
+Initial upstream revision: 95cb66513ebf373ca0d411011ce11cba4fafd0d3.
+The nat_gcd.ac file includes a Venticorn modification that adds an explicit
+intermediate proof step. It is identified in the source and provenance.json.
