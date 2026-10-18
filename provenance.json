@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/acornprover/acornlib",
+    "revision": "95cb66513ebf373ca0d411011ce11cba4fafd0d3",
+    "date": "2025-03-17"
+  },
+  "prover_baseline": {
+    "repository": "https://github.com/johnclyde/venticorn",
+    "revision": "05db3d411fda1a983726a62f01d2a2b65c269c1c",
+    "acorn_revision": "7cb4ccb3ca93974b459ad152afc385a8f8ddf541",
+    "acorn_checkpoint": 1070,
+    "acorn_date": "2025-04-04"
+  },
+  "modern_mapping": {
+    "revision": "3b5d205cd6eb3ee659fc0bca5906cef794cd3fb2",
+    "reviewed_on": "2026-10-18",
+    "scope": "Mathematical counterparts; modern source syntax and imports are not claimed compatible."
+  },
+  "files": {
+    "nat.ac": {
+      "upstream_path": "nat.ac",
+      "upstream_sha256": "adf1743744e811b1a5e3f6fe51c209c6a520b0eb217fa8591d07d6206064c177",
+      "sha256": "adf1743744e811b1a5e3f6fe51c209c6a520b0eb217fa8591d07d6206064c177",
+      "lines": 1450,
+      "named_theorems": 122,
+      "proof_obligations": 680,
+      "modern_counterpart": "src/nat/nat_base.ac"
+    },
+    "pair.ac": {
+      "upstream_path": "pair.ac",
+      "upstream_sha256": "10dcf70eea085f16de0cb6920b406deb7a694a8bd278b13b313bbdedffacc272",
+      "sha256": "10dcf70eea085f16de0cb6920b406deb7a694a8bd278b13b313bbdedffacc272",
+      "lines": 17,
+      "named_theorems": 1,
+      "proof_obligations": 3,
+      "modern_counterpart": "src/pair/base.ac"
+    },
+    "nat_gcd.ac": {
+      "upstream_path": "nat_gcd.ac",
+      "upstream_sha256": "6a74430f0991adca82cbfb48ec42e46eafc4babcf83ba0a056c1871193e260e5",
+      "sha256": "9eb23d3db914abfcfcfdeb1b69b2ed252df6898294b0094afabc68f132a32c11",
+      "lines": 479,
+      "named_theorems": 30,
+      "proof_obligations": 212,
+      "modern_counterpart": "src/nat/gcd.ac",
+      "adaptation": {
+        "reason": "Make the scaled-divisibility proof step explicit without changing theorem statements or removing proof steps.",
+        "comment": "// Modified for Venticorn: make the scaled-divisibility proof step explicit.",
+        "insert_after": "    divides(gcd(af, bf), bf)",
+        "inserted_line": "    divides(gcd(af, bf) * gcd(a, b), b)",
+        "theorem": "cofactor"
+      }
+    }
+  }
+}
